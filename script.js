@@ -31,8 +31,8 @@ requester.onreadystatechange = function () {
       listItem.appendChild(created_at)
 
       listElement.append(listItem)
+    } else if(requester.status != 200) {
+      window.alert(`Erro na requisição.\nStatusCode: ${requester.status}`)
     }
-  } else {
-    window.alert(`Erro ao fazer requisição!\nStatusCode: ${requester.status}`)
   }
 }
