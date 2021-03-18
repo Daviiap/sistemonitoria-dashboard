@@ -25,14 +25,17 @@ requester.onreadystatechange = function () {
       const created_at = document.createElement('span')
       created_at.innerHTML = new Date(item.created_at).toLocaleString()
 
+      const closed = document.createElement('span')
+      closed.innerHTML = item.closed
+
       listItem.appendChild(matricula)
       listItem.appendChild(nome)
       listItem.appendChild(contato)
       listItem.appendChild(created_at)
+      listItem.appendChild(closed)
 
       listItem.onclick = () => {
         console.log(listItem.getAttribute('id'));
-        // window.location.search = 
         window.location = `/details/?duvida=${listItem.getAttribute('id')}`
       }
 
