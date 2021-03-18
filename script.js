@@ -2,7 +2,7 @@ const listElement = document.getElementById('submit-list')
 
 const requester = new XMLHttpRequest()
 
-requester.open("GET", "https://api-monitoria-fmccii.herokuapp.com/get", true)
+requester.open("GET", "https://api-monitoria-fmccii.herokuapp.com/getAll", true)
 
 requester.send()
 requester.onreadystatechange = function () {

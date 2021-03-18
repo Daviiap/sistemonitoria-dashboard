@@ -1,0 +1,22 @@
+#container {
+  padding: 24px;
+}
+
+#description {
+  padding: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(89, 95, 81, 0.2);
+  background-color: rgba(0, 0, 0, 0.027);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.info h2 {
+  padding: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(89, 95, 81, 0.2);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.027);
+}
