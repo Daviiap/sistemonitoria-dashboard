@@ -30,6 +30,11 @@ requester.onreadystatechange = function () {
       listItem.appendChild(contato)
       listItem.appendChild(created_at)
 
+      listItem.onclick = () => {
+        console.log(listItem.getAttribute('id'));
+        window.location.href = '/details'
+      }
+
       listElement.append(listItem)
     }
   } else if (requester.status != 200) {
