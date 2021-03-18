@@ -32,7 +32,8 @@ requester.onreadystatechange = function () {
 
       listItem.onclick = () => {
         console.log(listItem.getAttribute('id'));
-        window.location.href = '/details'
+        // window.location.search = 
+        window.location = `/details/?duvida=${listItem.getAttribute('id')}`
       }
 
       listElement.append(listItem)
